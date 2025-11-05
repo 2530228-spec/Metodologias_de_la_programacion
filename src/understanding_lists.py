@@ -46,3 +46,65 @@ print(bicycles)
 print("Agregar un elemento al final de la lista:")
 bicycles.append('ducatti')
 print(bicycles)
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki']
+motorcycles.append('ducatti')
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki', 'ducatti']
+
+print("\n--- Agregar elementos a una lista método insert() ---")
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki']
+motorcycles.insert(0, 'ducatti')
+print(motorcycles) #Salida: ['ducatti', 'honda', 'yamaha', 'suzuki']
+
+"""
+Eliminar elementos de una lista (del)
+
+"""
+print("\n--- Eliminar elementos de una lista (del) ---")
+motorcycles = ['honda', 'yamaha', 'suzuki'] 
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki']
+del motorcycles[0]
+print(motorcycles) #Salida: ['yamaha', 'suzuki']
+
+"""
+Eliminar elementos de una lista (pop)
+"""
+print("\n--- Eliminar elementos de una lista (pop) ---")
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki']
+popped_motorcycle = motorcycles.pop()
+print(motorcycles) #Salida: ['honda', 'yamaha']
+print(f'La motocicleta que borraste fue {popped_motorcycle.title()}.')
+
+"""
+Eliminar un elemento de una lista por valor (pop)
+
+"""
+print("\n--- Eliminar un elemento de una lista por valor (pop) ---")
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki']
+popped_motorcycle = motorcycles.pop(1)
+print(motorcycles) #Salida: ['honda', 'yamaha']
+print(f'La motocicleta que borraste fue {popped_motorcycle.title()}.')
+
+"""
+Eliminar un elemento de una lista por valor (remove)
+
+"""
+print("\n--- Eliminar un elemento de una lista por valor (remove) ---")
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducatti']
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki', 'ducatti']
+motorcycles.remove('ducatti')
+print(motorcycles) #Salida: ['honda', 'yamaha', 'suzuki']
+print("\n")
+
+"""
+organizar una lista permanente con sort()
+"""
+print("\n--- organizar una lista permanente con sort() ---")
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+print(cars) #Salida: ['bmw', 'audi', 'toyota', 'subaru']
+cars.sort() 
+print(cars) #Salida: ['audi', 'bmw', 'subaru', 'toyota']
