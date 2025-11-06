@@ -108,3 +108,10 @@ cars = ['bmw', 'audi', 'toyota', 'subaru']
 print(cars) #Salida: ['bmw', 'audi', 'toyota', 'subaru']
 cars.sort() 
 print(cars) #Salida: ['audi', 'bmw', 'subaru', 'toyota']
+
+print("\n")
+students = ["estevan", "ana", "maria", "juan", "zulema"]
+print(students) #Salida: ['estevan', 'ana', 'maria', 'juan', 'zulema']
+desired_student = input("Ingrese el nombre del estudiante que desea borrar: ")
+students.remove(desired_student.lower().strip())
+print(students) #Salida: lista sin el estudiante borrado 
